@@ -1,0 +1,98 @@
+body{
+    background-color: grey;
+    color: bisque;
+    font: normal 16px Arial,Helvetica,sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width: 500px;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+.language{
+    color: fuchsia;
+}
+input:default{
+    box-shadow: 0 0 2px 1px coral;
+}
+input:default + label{
+    color: coral;
+}
+:dir(ltr){
+    background-color: black;
+}
+:dir(rtl){
+    background-color: powderblue;
+}
+input[type="text"]:disabled{
+    background: #ccc;
+}
+.box{
+    background: pink;
+    color: black;
+    height: 118px;
+    width: 80px;
+}
+
+
+.box:empty{
+    background: lime;
+}
+input:enabled{
+    color: #2b2;
+}
+input:disabled{
+    color: #aaa;
+}
+
+@page :first{
+    margin-left: 50%;
+    margin-top: 50%;
+}
+p{
+    page-break-after: always;
+}
+p:first-child{
+    color: lime;
+    background-color: black;
+    padding: 5px;
+}
+ul li{
+    color: blue;
+}
+ul li:first-child{
+    color: red;
+    font-weight: bold;
+}
+
+p:first-of-type{
+    color: red;
+    font-style: italic;
+}
+.red-input:focus{
+    background: yellow;
+    color: red;
+}
+.blue-input:focus{
+    background: pink;
+    color: orange;
+}
+
+input, button{
+    margin: 10px;
+}
+.focus-only:focus{
+    outline: 2px solid black;
+}
+.focus-visible-only:focus-visible{
+    outline: 4px dashed darkorange;
+}
+
+input{
+     padding: 3px;
+}
+
+input:placeholder-shown{
+    border-color: silver;
+}
